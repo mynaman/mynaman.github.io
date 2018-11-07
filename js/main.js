@@ -1,5 +1,23 @@
 $(function() {
 
+    const img_cache_arr = new Array();
+
+    function preload(arrayOfImages) {
+        // const img_cache_arr = new Array();
+
+        $(arrayOfImages).each((i, v) => { 
+            img_cache_arr[i] = new Image();
+            img_cache_arr[i].src = v;
+        });
+    }
+
+    preload([
+        '/img/pexels-photo-1046896.jpeg',
+        '/img/athletes-audience-ball-270085.jpg',
+        '/img/pexels-photo-160107.jpeg',
+        '/img/KakaoTalk_20181105_172935900.jpg',
+    ]);
+
     $('.headA .btn-bars').click(() => {
         const isDisplay = $('.headB').css('display');
         isDisplay === 'none' ? $('.headB').css('display', 'flex').animate({height:'90px'}, 400)
