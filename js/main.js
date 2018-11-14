@@ -30,7 +30,7 @@ $(function() {
         },
         {
             url: `/img/athletes-audience-ball-270085.jpg`,
-            text: `축덕이라서 축구를 좋아 합니다`,
+            text: `축구 매니아 입니다`,
             current: false,                                        
         },
         
